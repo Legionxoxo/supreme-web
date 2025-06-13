@@ -44,7 +44,7 @@ export default function Navbar({ scrollRef }: { scrollRef: RefObject<HTMLDivElem
 
                 {/* Right - Buttons and icons */}
                 <div className="flex items-center space-x-8 max-sm:space-x-0  ">
-                    <button className="bg-[#5CD6FF] hover:bg-[#00BFFF] hover:cursor-pointer text-black px-5 py-2 rounded-full font-medium transition">
+                    <button className="bg-highlight hover:bg-highlight/80 hover:cursor-pointer text-black px-5 py-2 rounded-full font-medium transition">
                         Contact Us
                     </button>
 

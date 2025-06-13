@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <div
         ref={scrollRef}
-        className="h-screen overflow-y-scroll custom-scrollbar flex flex-col items-center justify-center space-y-10 text-red-300"
+        className="h-screen overflow-y-scroll custom-scrollbar space-y-10 text-red-300"
       >
         <Navbar scrollRef={scrollRef} />
         <div>

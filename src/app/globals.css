@@ -2,51 +2,59 @@
 
 :root {
     --background: #ffffff;
-    --foreground: #171717;
+    --foreground: #000000;
 }
 
 @theme inline {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
-    --font-sans: var(--font-geist-sans);
-    --font-mono: var(--font-geist-mono);
+    --color-highlight: #5cd6ff;
+    --color-bgcontact: #0067b1;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
+        --background: #000000;
+        --foreground: #ffffff;
     }
 }
 
 body {
     background: var(--background);
     color: var(--foreground);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Manrope", sans-serif;
 }
 
-@layer base {
-    .custom-scrollbar {
-        scrollbar-width: thin; /* Firefox */
-        -ms-overflow-style: none; /* IE */
-    }
+.custom-scrollbar {
+    overflow-y: auto;
+    /*  border: 0px solid #000000 !important; */
+}
 
-    .custom-scrollbar::-webkit-scrollbar {
-        width: 6px; /* width of vertical scrollbar */
-    }
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    background-color: #ededed;
+}
 
-    .custom-scrollbar::-webkit-scrollbar-track {
-        background: transparent; /* transparent track */
-    }
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
 
-    .custom-scrollbar::-webkit-scrollbar-thumb {
-        background-color: #3b82f6; /* Tailwind blue-500 */
-        border-radius: 8px;
-        border: 2px solid transparent;
-        background-clip: content-box;
-    }
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #000000 !important;
+    border-radius: 1px;
+    height: 10px; /* Reduced height for very short scrollbar */
+}
 
-    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-        background-color: #2563eb; /* Tailwind blue-600 */
-    }
+.custom-scrollbar::-webkit-scrollbar-track-piece:start,
+.custom-scrollbar::-webkit-scrollbar-track-piece:end {
+    background: transparent !important;
+    display: none !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar-button {
+    display: none !important; /* Removes arrow buttons */
+    height: 0 !important;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #00bfff !important; /* light gray or any color you prefer */
 }
