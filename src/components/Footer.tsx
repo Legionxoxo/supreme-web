@@ -5,15 +5,28 @@ const Footer = () => {
     return (
         <footer className="relative bg-gradient-to-b from-white to-[#d2e7fb] text-black overflow-hidden px-4 pt-24 pb-10 ">
             {/* Background Image Right */}
-            <div className="absolute right-0 top-0 h-full w-1/2 max-w-[400px] opacity-10 pointer-events-none hidden md:block">
+            <div
+                className="
+                h-full w-1/2 max-w-[1600px]
+                absolute 
+                top-20 right-0
+                sm:top-32 sm:right-80
+                md:top-48 md:-right-48
+                lg:top-56 lg:-right-48
+                xl:top-48 xl:-right-84
+                opacity-9 pointer-events-none 
+                hidden md:block 
+                rounded-full overflow-hidden">
                 <Image
-                    src={footerData.logoSrc}
+                    src={footerData.bgImageSrc}
                     alt="Background"
-                    className="object-contain"
-                    height={50}
-                    width={50}
+                    fill
+                    className="object-cover object-left- scale-[1]"
+                    sizes="(max-width: 768px) 100vw, 400px"
                 />
             </div>
+
+
 
             {/* Main Content */}
             <div className="relative z-10 w-full max-w-7xl mx-auto md:px-20 lg:px-32 xl:px-40 flex flex-col space-y-12">
@@ -24,7 +37,7 @@ const Footer = () => {
                         src={footerData.logoSrc}
                         alt="Supreme Group"
                         width={180}
-                        height={50}
+                        height={60}
                     />
                 </div>
 
