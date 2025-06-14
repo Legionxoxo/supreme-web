@@ -10,6 +10,7 @@ import {
 } from '../../data/data';
 import MobileAnimation from './MobileAnimation';
 import HeroText from './HeroText';
+import Image from 'next/image';
 
 const Animation = () => {
     const [currentSection, setCurrentSection] = useState<'passenger' | 'commercial' | 'next'>('passenger');
@@ -100,6 +101,7 @@ const Animation = () => {
                 videoRef.current.pause();
             }
             setIsPaused(!isPaused);
+            console.log('scrollPercent', scrollPercent)
         }
     };
 
@@ -235,7 +237,7 @@ const Animation = () => {
                                                                 }
                                                                 className="flex flex-col items-center space-y-2 group"
                                                             >
-                                                                <img
+                                                                <Image
                                                                     src={icon.src}
                                                                     alt={icon.title}
                                                                     className={`w-16 h-16 object-contain transition-transform duration-300 ${isSelected

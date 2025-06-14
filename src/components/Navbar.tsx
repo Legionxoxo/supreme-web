@@ -50,7 +50,7 @@ export default function Navbar({ scrollRef }: { scrollRef: RefObject<HTMLDivElem
 
                     {/* LinkedIn icon */}
                     <a href="#" className="hover:opacity-75 transition-opacity max-sm:hidden">
-                        <img
+                        <Image
                             src="/icons/linkedin.svg"
                             alt="LinkedIn"
                             className="size-5"
@@ -59,7 +59,7 @@ export default function Navbar({ scrollRef }: { scrollRef: RefObject<HTMLDivElem
 
                     {/* Language selector */}
                     <div className="flex items-center space-x-6 hover:opacity-75 transition-opacity max-sm:hidden">
-                        <img
+                        <Image
                             src="/icons/eng.svg"
                             alt="Language"
                             className="size-10 cursor-pointer"

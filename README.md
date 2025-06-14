@@ -44,9 +44,9 @@
 src/
 ├── app/          # Next.js app directory (routing and pages)
 ├── components/   # Reusable React components
-│   ├── Animation.tsx
-│   ├── HeroText.tsx
-│   ├── MobileAnimation.tsx
+│   ├── Animation.tsx # showcase component with animation
+│   ├── HeroText.tsx  # showcase component text animation
+│   ├── MobileAnimation.tsx #showcase component mobile version
 │   ├── Hero.tsx
 │   ├── Footer.tsx
 │   ├── Contact.tsx
