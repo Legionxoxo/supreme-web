@@ -29,7 +29,7 @@ export default function Navbar({ scrollRef }: { scrollRef: RefObject<HTMLDivElem
             className={`fixed top-0 w-full z-50 bg-[#F9FAFD] shadow transition-transform duration-500 ease-in-out ${show ? "translate-y-0" : "-translate-y-full"
                 } h-20`}
         >
-            <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
+            <div className="max-w-7xl mx-auto px-4 h-full flex items-center justify-between">
                 {/* Left - Logo */}
                 <div className="flex items-center space-x-2">
                     <Image

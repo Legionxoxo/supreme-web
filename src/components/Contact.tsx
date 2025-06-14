@@ -4,7 +4,7 @@ import { contactInfo } from "../../data/data"
 const Contact = () => {
     return (
         <section className="bg-bgcontact text-white py-12 min-h-screen flex items-center justify-center">
-            <div className="w-full max-w-[874px] px-6 flex flex-col md:flex-row gap-10 xl:gap-[150px]">
+            <div className="w-full max-w-[874px] px-4 md:px-20 lg:px-4 xl:px-0 flex flex-col md:flex-row gap-10 xl:gap-[150px]">
 
                 {/* Get in touch Heading - Always first in mobile */}
                 <div className="order-1 w-full md:hidden">
@@ -13,7 +13,7 @@ const Contact = () => {
                 </div>
 
                 {/* Form */}
-                <form className="w-full md:w-[364px] space-y-[50px] order-2 md:order-2">
+                <form className="w-full md:w-[320px] space-y-[50px] order-2 md:order-2">
                     <input
                         type="text"
                         placeholder="Full name"
@@ -43,7 +43,7 @@ const Contact = () => {
                 </form>
 
                 {/* Contact Info + Heading (desktop) */}
-                <div className="w-full md:w-[364px] space-y-6 order-3 md:order-1">
+                <div className="w-full md:w-[395px] space-y-6 order-3 md:order-1">
                     <div className="hidden md:block">
                         <h2 className="text-5xl max-md:text-2xl font-semibold">Get in touch</h2>
                         <div className="w-16 h-1 bg-white my-10" />
@@ -51,7 +51,7 @@ const Contact = () => {
 
                     <p className="text-2xl max-md:text-base mb-10 font-normal">For general enquiries</p>
 
-                    <div className="text-xl max-md:text-sm">
+                    <div className="text-xl max-md:text-sm text-pretty">
                         <p className="font-semibold">Address :</p>
                         <p className="font-normal">
                             {contactInfo.address}
